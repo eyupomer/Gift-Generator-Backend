@@ -2,6 +2,9 @@
   "name": "gift_generator_api",
   "version": "1.0.0",
   "main": "server.js",
+  "_moduleAliases": {
+    "@": "."
+  },
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
@@ -13,9 +16,12 @@
   "description": "",
   "dependencies": {
     "@prisma/client": "^6.13.0",
+    "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "module-alias": "^2.2.3",
     "prisma": "^6.13.0"
   },
   "devDependencies": {
