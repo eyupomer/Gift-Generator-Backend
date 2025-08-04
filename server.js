@@ -5,6 +5,7 @@ require('dotenv').config();
 // Routes
 const authRoutes = require('@/routes/auth')
 const newsletterRoutes = require('@/routes/newsletter')
+const faqsRoutes = require('@/routes/faqs')
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -17,6 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use('/api/auth', authRoutes)
 app.use('/api/newsletter', newsletterRoutes)
+app.use('/api/faqs', faqsRoutes)
 
 // Test route
 app.get('/', (req, res) => {
